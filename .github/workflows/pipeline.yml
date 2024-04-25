@@ -24,7 +24,7 @@ jobs:
         depth: 1
         branch: 'main'
         owner: 'pauldchang'
-        repository: 'ec2-ansible'
+        repository: 'keypair'
 
     - name: Access cloned repo
       run: |
