@@ -28,7 +28,7 @@ jobs:
 
     - name: Access cloned repo
       run: |
-         cd ec2-ansible
+         cd keypair
          ls -la
     
     - name: Configure AWS credentials
