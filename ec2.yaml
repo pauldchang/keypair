@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+  become: false
+  tasks:
+  - name: create key pair using provided key_material
+    amazon.aws.ec2_key:
+      name: ansible-tuncay
+      key_material: 'ssh-rsa AAAAxyz...== me@example.com'
