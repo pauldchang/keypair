@@ -6,7 +6,7 @@ on:
       - main  # Adjust the branch name as needed
 
 jobs:
-  ec2-ansible:
+  keypair:
     runs-on: ubuntu-latest  # You can choose a different operating system if needed
 
     steps:
@@ -18,7 +18,7 @@ jobs:
       with:
         python-version: 3.9  # Choose a Python version compatible with Ansible
     
-    - name: Clone ansible
+    - name: Clone keypair
       uses: GuillaumeFalourd/clone-github-repo-action@v2.3
       with:
         depth: 1
